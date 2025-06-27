@@ -17,7 +17,9 @@ func fetchData(source int, results chan<- int, wg *sync.WaitGroup, seed uint64, 
 	results <- source * 10 // return some result
 }
 
-func main() {
+// if you want run this file, just replace _main() to main()
+// and run go run golang_concurrency_1.go
+func _main() {
 	seed := uint64(time.Now().UnixNano())
 	stream := uint64(time.Now().UnixNano() >> 1)
 
