@@ -41,7 +41,7 @@ func worker(id int, jobs <-chan Job, results chan<- Result, wg *sync.WaitGroup, 
 	}
 }
 
-func main() {
+func __main() {
 	numJobs := 100
 	numWorkers := 4
 
